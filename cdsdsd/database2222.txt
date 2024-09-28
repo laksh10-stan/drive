@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <conio.h>
+struct student
+
+{
+	int i;
+	int r;
+	char name[50];
+	float h;
+	int year;
+} s[25];
+main()
+{    int n,i;
+	struct student s1[60];
+	scanf ("%d",&n);
+	for(i=0;i<n;i++)
+	{
+	scanf("%d%s%f%d",&s1[i].r,s1[i].name,&s1[i].h,&s1[i].year);
+	printf("The Display:\n");
+	printf("Rollno=%d\nName=%s\nHeight=%f\nYear=%d",s1[i].r,s1[i].name,s1[i].h,s1[i].year);
+    }   
+}
+
+
+
+

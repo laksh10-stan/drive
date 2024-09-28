@@ -1,0 +1,83 @@
+#include<stdio.h>
+  void evenodd(int);
+  int main(){
+              int number,remainder;
+              clrscr();
+              printf(" Enter an integer number: ");
+              scanf("%d",&number);
+              evenodd(number);
+              getch();
+              return(0);
+              }
+
+  void evenodd(int number){
+             int remainder;
+             remainder = abs(number) % 2;
+             switch(remainder){
+                        case 0 : printf("\n %d is an even number.",number);
+                                     break;
+                        case 1 : printf("\n %d is an odd number.",number);
+                                     break;
+             return(0);
+             }
+             }
+Sample outputs:
+  Enter an integer number: 371
+  371 is an odd number.
+  Enter an integer number: -120
+  -120 is an even number.
+ Related Popular Posts:
+* C program to check even or odd using Bitwise Operator
+* C program to find Sum of Odd Digits of a Number
+* C program to find Sum of Even Digits of a Number
+* C program to find Sum of Even and Odd Digits of a Number
+* C program to print Odd Digits of a Number
+* C program to print Even Digits of a Number
+* C program to display Odd numbers from the given N numbers
+* C program to display Even numbers from the given N numbers
+* C program to check whether a number is odd or even. 
+
+ 
+
+
+ 
+About Er. T.Tharesh Kumar
+I am a Professor and Head of Department of Computer Science in an Arts and Science College. I have designed this website to provide solved example programs of different categories for all the school and college going students to learn C language deeply, and to practice Interview based Multiple Choice (Objective Type) questions and answers.
+Other Related C Programs :
+* C Program to find whether the given number is Odd or Even, 
+* C Program to find the Sum of Odd Digits, 
+* C Program to find the Sum of Even Digits, 
+* C Program to find the Sum of Even and Odd Digits,
+* C Program to Display Odd digits, 
+* C Program to Display even digits, 
+* C Program to Display Odd Numbers,
+* C Program to Display Even Numbers,
+* C Program to Check whether the given number is Armstrong number, 
+* C Program to display the Armstrong numbers in Range, 
+* C Program to display the Armstrong numbers between 1 and 1000, 
+* C Program to check perfect number, perfect numbers in range, 
+* C Program to Check Prime number, Prime numbers between 1 and 100, 
+* C Program to display the Prime numbers in a Range, 
+* C Program to display the Sum of Prime numbers, 
+* C Program to Check Strong number, 
+* C Program to display the Strong number in Range, 
+* C Program to Check whether the given number is polindrome number or not, 
+* C Program to Check polindrome number using for loop, 
+* C Program to Check polindrome number using Recursion, 
+* C Program to  check whether the given string is polindrome or not, 
+* C Program to find the Roots of Quadratic equation, 
+* C Program to display Fibonacci Series, 
+* C Program to display the Fibonacci Series using an array, 
+* C Program to display the Fibonacci Series using while loop, 
+* C Program to find the Sum of Fibonacci Series, Factorial of Number, 
+* C Program to find the Factorial without using Recursion, 
+* C Program to find the Factorial using Pointers, 
+* C Program to find the Factorial using Function
+Questions and answers Answers Solved Computer Department of computer science Odd Number
+Even or Odd program in C
+The Even or Odd program in C is used to test the given number and to specify whether the number belongs to Even or Odd. It is clear that the remainder after the division of Even number by 2 will be Zero, and the remainder after the division of Odd number by 2 will be one. The Even and Odd numbers are generally belongs to Integer. The Even and Odd numbers may have no decimal point.
+
+
+Bookmark and Share
+
+You might also like

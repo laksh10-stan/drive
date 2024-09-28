@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+{
+	char str[100],str1[100];
+	int i=0;
+	printf ("Enter the string:\n");
+	gets(str);
+	while (str[i]!='\0')
+	{
+		if (str[i]>='a'&&str[i]<='z')
+		str1[i]=str[i]-32;
+		else 
+		str1[i]=str[i];
+		i++;
+		
+	}
+	str1[i]='\0';
+	printf ("The uppercase string is:");
+	puts(str1);
+}
+
+

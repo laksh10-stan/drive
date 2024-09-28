@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+int fact (int);
+main()
+{
+	int n,r;
+	float result;
+	printf ("Enter the values of n and r\n");
+	scanf ("%d%d",&n,&r);
+	result=(fact(n))/(fact(r)*fact(n-r));
+	printf ("Result =%f",result);
+}
+int fact (int num)
+{
+	int f=1,i;
+	for (i=num;i>=1;i--)
+	f=f*i;
+	return f;
+}

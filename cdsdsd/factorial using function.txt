@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <conio.h>
+void main ()
+{
+           int a;
+           long f,fact();
+           clrscr();
+           printf ("\n Enter a Number : ");
+           scanf ("%d",&a);
+           f=fact(a);
+           printf ("\n The Factorial of %d is : %ld",a,f);
+           getch();
+}
+       long fact(int b)
+ {
+     int i;
+     long f=1;
+     for (i=1;i<=b;i++)
+            f=f*i;
+            return(f);
+}
+Output :
+Enter a Number : 5
+The Factorial of 5 is : 120
+
+ 
+
+

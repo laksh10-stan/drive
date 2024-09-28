@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <conio.h>
+void fun();  
+ main()
+{
+	printf ("First call fun()");
+	fun();
+	printf("Second Call fun()");
+	printf ("Third call fun()");
+	
+}
+void fun()
+{
+	static int x;
+	int y=0;
+	printf ("x=%d",x);
+	printf ("y=%d",y);
+	x++;
+	y++;
+
+}The truth is you don't know what is going to happen tomorrow. Life is a crazy ride, and nothing is guaranteed.
+Dealing with backstabbers, there was one thing I learned. They're only powerful when you got your back turned.

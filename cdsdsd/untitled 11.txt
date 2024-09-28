@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+
+{
+	FILE*fp;
+	char name[80];
+	int rol;
+	fp=fopen("stu.txt","r");
+	if (fp==NULL)
+	printf("File can't be opened");
+	exit(i);
+	printf ("Enter the name rollno");
+	fscanf(stdin,"%s%d",name,&rol);
+	printf ("Name=%s\tRollno=%d",name,rol);
+	fclose(fp);
+
+} 
+
+
+

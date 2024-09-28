@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <conio.h>
+main()
+
+{
+	FILE*fp;
+	char name[20];
+	int i;
+	float salary;
+
+	fp=fopen("detail.txt","w");
+	for(i=0;i<10;i++)
+	{
+		puts("Enter name");
+		gets(name);
+		puts("Enter salary");
+		scanf("%f",&salary);
+		fprintf(fp,"%dName:[%-10.10s]\tSALARY:%5.2f",i,name,salary);
+	}fclose(fp);
+}
+	
+
+
+
+
+
