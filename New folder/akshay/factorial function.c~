@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<conio.h>
+long int factori(int n);
+ int main()
+{
+	long int fact;
+	int number;
+	printf("enter the   number");
+	scanf("%d ",&number);
+	fact=factori(number);
+	printf("the factorial of %d is %d",number,fact);
+	
+}
+
+long int factori(int n)
+	{
+	
+	int i;
+	long int factorial=1;
+	for(i=1;i<=n;i++)
+	factorial=factorial*i;
+	
+
+
+return (factorial);
+}

@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<conio.h>
+int evenorodd(int number);
+main()
+{
+	int number;
+	printf("enter the  number\n");
+	scanf("%d ",&number);
+	evenorodd(number);
+	if(evenorodd(number)==1)
+	{
+	printf("%d is  the odd number\n",number);	
+	}
+	else
+	{
+		printf("%d is  the even number\n",number);	
+	}	
+}
+
+	int evenorodd(int number)
+	{
+	
+	if(number%2==0)
+	return 0;
+	
+	else
+return 1;
+
+}
