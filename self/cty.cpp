@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<ctype.h>
+main()
+{
+	int i;
+	char c;//e=1,ggm,h=?,i=$,j=!;
+	for(i=0;i<10;i++)
+	{	
+	c=getchar();
+	if (isalpha(c)>0)
+	{
+	printf("Letter\n");
+    }
+	if(isdigit(c)>0)
+	{
+	printf("dig\n");
+    }
+    if(isalnum(c)>0)
+	{
+	printf("alphanumeric\n");
+    }
+    if(isprint(c)>0)
+	{
+	printf("print\n");
+    }
+    if(islower(c)>0)
+	{
+		putchar(toupper(c));
+	printf("\nlower\n");
+    }
+    if(isupper(c)>0)
+	{
+		putchar(tolower(c));
+	printf("\nupper\n");
+    }
+    if(isspace(c)>0)
+	{
+	printf("space\n");
+	}    
+	if(ispunct(c)>0)
+	{
+	printf("punct\n");
+    }
+}
+}
